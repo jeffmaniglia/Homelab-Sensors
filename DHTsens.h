@@ -4,13 +4,13 @@
 #include "DHT.h"
 #include <Arduino.h>
 
-#define MSGLEN
+#define MSGLEN 50
 
 class DHTsens
 {
   private:
   uint8_t Tunit = false; // Selection of Tunit, default is Fahrenheit (false) Celsius is true
-  DHT *dht;
+  DHT* dht;
   
   public:
   // Variables
