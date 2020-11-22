@@ -4,8 +4,12 @@
 #include <Arduino.h>
 #include <Adafruit_ADS1015.h>
 
-#define MSGLEN
+#define MSGLEN 50
 
+// This class utilizes any standard photoresistor and a 10k resistor to measure light input
+// +5V (or digital high) ---- Photoresistor ---- 10k Resistor ---- Ground
+// 											  |---- Analog input on ADS1115
+// If you measure the true resistance of 10k resistor, substitute into Rk value
 class LightSens {
 	private:
 	// objects

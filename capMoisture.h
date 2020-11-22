@@ -4,7 +4,7 @@
 #include <Arduino.h>
 #include <Adafruit_ADS1015.h>
 
-#define MSGLEN
+#define MSGLEN 50
 
 class capMoisture {
 	private:

@@ -27,12 +27,10 @@ void DHTsens::read() {
 	}
 	
 	// Write MQTT msg outputs for all variables
-	sprintf(tMsg,"%f",0); // clear msg char array with an array of 0s (0.0000000)
-	sprintf(tMsg,"%f",t); // write t to msg char array for reporting over MQTT
-
-	sprintf(hMsg,"%f",0); // clear msg char array with an array of 0s (0.0000000)
-	sprintf(hMsg,"%f",h); // write h to msg char array for reporting over MQTT
-
-	sprintf(indMsg,"%f",0); // clear msg char array with an array of 0s (0.0000000)
-	sprintf(indMsg,"%f",ind); // write ind to msg char array for reporting over MQTT
+	float t2 = t;
+	sprintf(tMsg,"%f",t2); // write t to msg char array for reporting over MQTT
+	float h2 = h;
+	sprintf(hMsg,"%f",h2); // write h to msg char array for reporting over MQTT
+	float ind2 = ind;
+	sprintf(indMsg,"%f",ind2); // write ind to msg char array for reporting over MQTT
 }
